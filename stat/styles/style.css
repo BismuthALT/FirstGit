@@ -260,6 +260,7 @@ h1 {
     display: flex;
     gap: 44px;
 }
+
 .feedbackTextForms form {
     display: flex;
     gap: 10px;
@@ -275,11 +276,12 @@ h1 {
     border: 1px solid #BF9E7769
 }
 
-.feedbackTextForms input{
+.feedbackTextForms input {
     padding: 20px;
     padding-right: 80px;
 
 }
+
 .feedbackTextForms button {
     background-color: #BF9E77;
     color: #FFFFFF;
@@ -294,7 +296,7 @@ h1 {
 
 }
 
-.feedbackImg{
+.feedbackImg {
     overflow: hidden;
     z-index: 4;
     display: flex;
@@ -302,22 +304,36 @@ h1 {
     margin-top: -90px;
 }
 
+.feedback_p {
+    margin-left: 70px;
+    margin-top: 40px;
+    font-family: TT Fors Trial;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+
+}
+
 /* КУРСЫ ВАЛЮТ */
-.currency{
+.currency {
     padding-top: 50px;
     padding-left: 70px;
 }
-#rates{
+
+#rates {
     display: flex;
     gap: 20px;
     font-size: 26px;
 }
 
-.weatherSection{
+.weatherSection {
     padding: 50px;
     padding-left: 70px;
 }
-#weather{
+
+#weather {
     display: flex;
     gap: 20px;
     font-size: 26px;
@@ -325,16 +341,17 @@ h1 {
 }
 
 /* RepitBLock */
-.repitBlock{
+.repitBlock {
     padding-left: 70px;
     padding-bottom: 50px;
 }
-.repitBlock form{
+
+.repitBlock form {
     display: flex;
     gap: 15px;
 }
 
-.repitBlock_btn{
+.repitBlock_btn {
     border: none;
     border-radius: 5px;
     background-color: #BF9E77;
@@ -348,7 +365,7 @@ h1 {
     padding: 20px 60px;
 }
 
-.repitBlock_form{
+.repitBlock_form {
     border-radius: 5px;
     padding: 20px;
     padding-right: 80px;
@@ -359,7 +376,7 @@ h1 {
 
 /* mouseover */
 
-.mouseoverSection{
+.mouseoverSection {
     display: inline-flex;
     margin-left: 60px;
     margin-bottom: 50px;
