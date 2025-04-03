@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гид по недвижимости</title>
+    <link rel="stylesheet" href="stat/styles/style.css">
+    <link rel="shortcut icon" href="stat/img/logo.svg" />
+
+</head>
+
+<body>
+    <header id='header'>
+        <nav>
+            <ul>
+                <li class="nav_logo">
+                    <img src="stat/img/logo.svg">
+                    <a href="#">Гид по недвижимости</a>
+                </li>
+                <li class="nav_contact">
+                    <div class="nav_contact__phone">
+                        <img src="stat/img/nav_phone.svg">
+                        <a href="#">+7 978 221 26 88</a>
+                    </div>
+                    <div class="nav_contact__mail">
+                        <img src="stat/img/nav_mail.svg">
+                        <a href="#">info@gidrealter.ru</a>
+                    </div>
+                </li>
+                <li class="nav_btn">
+                    <a href="#">Заказать звонок</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="header_content">
+            <h1>
+                Юридическая проверка объекта недвижимости перед покупкой
+            </h1>
+            <p id="Header_p">Всесторонняя проверка истории объекта недвижимости, продавца, прав 3-лиц и характеристик недвижимости</p>
+            <a href="#" class="header_content__btn">Оставить заявку</a>
+        </div>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <img src="stat/img/icon/card_defferent.svg">
+            <div class="card_title">Безопасно</div>
+            <div class="card_text">Всесторонняя проверка по базам и реестрам</div>
+        </div>
+        <div class="card">
+            <img src="stat/img/icon/card_time.svg">
+            <div class="card_title">Быстро</div>
+            <div class="card_text">Юридическая проверка занимает  1 день</div>
+        </div>
+        <div class="card">
+            <img src="stat/img/icon/card_money.svg">
+            <div class="card_title">Выгодно</div>
+            <div class="card_text">Цена ниже, чем по рынку. Не нужно подключать юриста и риэлтора</div>
+        </div>
+    </section>
+    <section class="videoBlocks">
+        <button id="rightButtonSlider" style="margin-left: 90.5vw;" ><img src="stat/img/icon/arrow-up_right.svg"></button>
+        <button id="leftButtonSlider" style="margin-left: -40px;"><img src="stat/img/icon/arrow-up.svg"></button>
+        <div class="slider" id="slider">
+            <div id="videoSlider" class="videoBlock">
+                <video controls src="/stat/video/HuTao2.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/bg_hu_tao.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/HuTao2.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/HuTao2.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/bg_hu_tao.mp4"></video>
+            </div>
+            <div id="videoSlider" class="videoBlock">
+                <video controls src="/stat/video/HuTao2.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/bg_hu_tao.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/HuTao2.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/HuTao2.mp4"></video>
+            </div>
+            <div class="videoBlock">
+                <video id="videoSlider" controls src="/stat/video/bg_hu_tao.mp4"></video>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section class="feedbackBlocks">
+        <div class="feedbackText">
+            <h3>Оставьте заявку и получите чек-лист по покупке недвижимости</h3>
+            <div class="feedbackTextForms">
+                <form id="feedbackForm">
+                        <input placeholder="Имя" class="feedbackForms" type="text" id="name" required  >
+                        <input class="feedbackForms" id="message" type="text" placeholder="Номер телефона" required >
+                        <button type="submit" class="feedbackForms">Получить чек-лист</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="feedbackImg">
+            <img src="stat/img/feedback_img.png" >
+        </div>
+    </section>
+
+    <section class="currency">
+        <h3>Курсы валют</h3>
+        <div id="rates">
+            Загрузка...
+        </div>
+    </section>
+
+    <section class="weatherSection">
+        <h3>Погода</h3>
+        <div id="weather">Загрузка....</div>
+    </section>
+
+    <section class="repitBlock">
+        <h3>Напиши любой текст</h3>
+        <form id="repitBlock_form">
+            <input class="repitBlock_form" type="text" placeholder="Текст" required id="repitText">
+            <button type="submit" class="repitBlock_btn">Жмяк</button>
+        </form>
+        <h4 id="repitBlock_replaceText">Этот текст заменится на тот что вы выберите</h4>
+    </section>
+
+    <section class="mouseoverSection" id="mouseoverSectionID">
+            <h3 id="mouseover">Наведись</h3>
+    </section>
+
+
+
+
+
+    <script src="stat/js/main.js">
+
+    </script>
+</body>
+
+</html>

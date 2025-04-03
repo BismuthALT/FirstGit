@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #654D31;
+}
+
+h3 {
+    font-family: TT Fors Trial;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+header {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 255, 255, 0.7) 20%,
+            rgba(255, 255, 255, 0.4) 30%,
+            rgba(255, 255, 255, 0.1) 50%,
+            rgba(255, 255, 255, 0) 60%),
+        url('/stat/img/header_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+nav {
+    padding: 10px 70px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: TT Fors Trial;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_logo a {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33.6px;
+    letter-spacing: 0%;
+}
+
+.nav_contact {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+}
+
+
+.nav_contact a {
+    font-family: TT Fors Trial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25.2px;
+    letter-spacing: 0%;
+    color: #654D31;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.nav_contact__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav_contact__mail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #654D31;
+    box-shadow: 0px 4px 7px 0px #654D312E;
+    border-radius: 10px;
+    font-family: TT Fors Trial;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0%;
+    background-color: #FFFFFF;
+}
+
+.nav_btn a {
+    padding: 20px 40px;
+    color: #654D31;
+}
+
+/* Header_conten */
+.header_content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 800px;
+    padding: 0 70px;
+    height: 100%;
+}
+
+h1 {
+    font-family: TT Fors Trial;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.2;
+    letter-spacing: 0%;
+    color: #654D31;
+
+}
+
+.header_content p {
+    font-family: TT Fors Trial;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    letter-spacing: 0%;
+}
+
+.header_content__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    font-family: TT Fors Trial;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0%;
+    background-color: #BF9E77;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: fit-content;
+
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 20px;
+    padding: 0px 70px;
+    position: relative;
+    top: -100px
+}
+
+.card {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 0px #654D3117;
+    border-radius: 15px;
+    padding: 32px 24px;
+
+}
+
+.card img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.card_title {
+    margin: 10px 0px;
+    font-family: TT Fors Trial;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 33.6px;
+    letter-spacing: 0%;
+    color: #654D31;
+}
+
+.card_text {
+    font-family: TT Fors Trial;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+
+/* videoBlocks */
+
+.videoBlocks {
+    display: flex;
+    grid-template-columns: repeat(2 1fr);
+    align-items: center;
+    padding: 20px 2%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.videoBlock video {
+    border-radius: 20px;
+    max-width: 30vw;
+    max-height: 700px;
+    overflow: hidden;
+
+
+}
+
+.videoBlocks button {
+    position: absolute;
+    background: none;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.sliderButton {
+    transform: translateX(+100%);
+}
+
+/* FeedBackBlocks */
+.feedbackBlocks {
+    margin-top: 100px;
+    min-height: 400px;
+    background-color: #F0EAE3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feedbackText {
+    padding-left: 70px;
+}
+
+.feedbackTextForms {
+    display: flex;
+    gap: 44px;
+}
+.feedbackTextForms form {
+    display: flex;
+    gap: 10px;
+}
+
+.feedbackForms {
+    font-family: TT Fors Trial;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    border-radius: 15px;
+    border: 1px solid #BF9E7769
+}
+
+.feedbackTextForms input{
+    padding: 20px;
+    padding-right: 80px;
+
+}
+.feedbackTextForms button {
+    background-color: #BF9E77;
+    color: #FFFFFF;
+    font-family: TT Fors Trial;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.0;
+    letter-spacing: 0%;
+    cursor: pointer;
+    padding: 20px 60px;
+
+
+}
+
+.feedbackImg{
+    overflow: hidden;
+    z-index: 4;
+    display: flex;
+    justify-content: end;
+    margin-top: -90px;
+}
+
+/* КУРСЫ ВАЛЮТ */
+.currency{
+    padding-top: 50px;
+    padding-left: 70px;
+}
+#rates{
+    display: flex;
+    gap: 20px;
+    font-size: 26px;
+}
+
+.weatherSection{
+    padding: 50px;
+    padding-left: 70px;
+}
+#weather{
+    display: flex;
+    gap: 20px;
+    font-size: 26px;
+
+}
+
+/* RepitBLock */
+.repitBlock{
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+.repitBlock form{
+    display: flex;
+    gap: 15px;
+}
+
+.repitBlock_btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #BF9E77;
+    color: #FFFFFF;
+    font-family: TT Fors Trial;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.0;
+    letter-spacing: 0%;
+    cursor: pointer;
+    padding: 20px 60px;
+}
+
+.repitBlock_form{
+    border-radius: 5px;
+    padding: 20px;
+    padding-right: 80px;
+    border: 2px solid #BF9E7769;
+    background-color: #F0EAE3;
+}
+
+
+/* mouseover */
+
+.mouseoverSection{
+    display: inline-flex;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: #BF9E7769;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #
+}
+
+@font-face {
+    font-family: 'TT Fors Trial';
+    src: url('/stat/font/TT\ Fors\ Trial\ Regular.ttf') format('woff2'),
+        url('CustomFontName.woff') format('woff');
+}
